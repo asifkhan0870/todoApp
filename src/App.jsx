@@ -1,16 +1,26 @@
 import Heading from "./components/Heading";
 import InputData from "./components/InputData";
-import Item1 from "./components/Item1";
-import Item2 from "./components/Item2";
-import './App.css'
+import Item from "./components/Item";
+import "./App.css";
 
 function App() {
+
+  
+  const todoItems = [
+    { name: "Buy Milk", dueDate: "08/12/2024" },
+    { name: "Buy ", dueDate: "08/12/2024" },
+    { name: "Buy Milk", dueDate: "08/12/2024" },
+    { name: "Buy ", dueDate: "08/12/2024" },
+    { name: "Buy Milk", dueDate: "08/12/2024" },
+    { name: "Buy ", dueDate: "08/12/2024" },
+  ];
+
+
   return (
     <center className="todo-container">
       <Heading></Heading>
-      <InputData/>
-      <Item1/>
-      <Item2/>
+      <InputData />
+      <Item todoItems={todoItems} />
     </center>
   );
 }
