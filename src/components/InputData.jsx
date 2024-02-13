@@ -11,7 +11,7 @@ function InputData() {
              <input type="date" />
           </div>
           <div class="col-2">
-          <button type="button" class="btn btn-success">Add</button>
+          <button type="button" class="btn btn-success my-btn">Add</button>
           </div>
         </div>
       </div>
